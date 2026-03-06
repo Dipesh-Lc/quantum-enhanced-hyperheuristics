@@ -1,0 +1,70 @@
+{
+  "config": {
+    "seed": 0,
+    "n": 12,
+    "p_edge": 0.3,
+    "outdir": "results/maxcut_sweep"
+  },
+  "rows": [
+    {
+      "reps": 1,
+      "n_param_samples": 8,
+      "cut_value": 20.67665229489662,
+      "qubo_energy": -20.67665229489662
+    },
+    {
+      "reps": 1,
+      "n_param_samples": 16,
+      "cut_value": 20.67665229489662,
+      "qubo_energy": -20.67665229489662
+    },
+    {
+      "reps": 1,
+      "n_param_samples": 32,
+      "cut_value": 20.67665229489662,
+      "qubo_energy": -20.67665229489662
+    },
+    {
+      "reps": 1,
+      "n_param_samples": 64,
+      "cut_value": 20.67665229489662,
+      "qubo_energy": -20.67665229489662
+    },
+    {
+      "reps": 1,
+      "n_param_samples": 128,
+      "cut_value": 20.67665229489662,
+      "qubo_energy": -20.67665229489662
+    },
+    {
+      "reps": 2,
+      "n_param_samples": 8,
+      "cut_value": 20.67665229489662,
+      "qubo_energy": -20.67665229489662
+    },
+    {
+      "reps": 2,
+      "n_param_samples": 16,
+      "cut_value": 20.67665229489662,
+      "qubo_energy": -20.67665229489662
+    },
+    {
+      "reps": 2,
+      "n_param_samples": 32,
+      "cut_value": 20.67665229489662,
+      "qubo_energy": -20.67665229489662
+    },
+    {
+      "reps": 2,
+      "n_param_samples": 64,
+      "cut_value": 20.67665229489662,
+      "qubo_energy": -20.67665229489662
+    },
+    {
+      "reps": 2,
+      "n_param_samples": 128,
+      "cut_value": 20.67665229489662,
+      "qubo_energy": -20.67665229489662
+    }
+  ]
+}

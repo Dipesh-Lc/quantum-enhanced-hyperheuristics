@@ -1,0 +1,48 @@
+{
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "summary": {
+    "move_max_to_min": {
+      "n": 10,
+      "final_mean": 281.4755388577045,
+      "final_std": 91.12260536027816,
+      "steps_to_1pct_mean": 22.6,
+      "auc_mean": 57006.41058630934,
+      "runtime_mean_sec": 0.00202784996945411
+    },
+    "swap_two_jobs": {
+      "n": 10,
+      "final_mean": 407.96895989608095,
+      "final_std": 132.3431270782956,
+      "steps_to_1pct_mean": 58.5,
+      "auc_mean": 82939.88506536608,
+      "runtime_mean_sec": 0.0037186000496149062
+    },
+    "two_smallest_from_max": {
+      "n": 10,
+      "final_mean": 271.04831514946466,
+      "final_std": 81.87536774892213,
+      "steps_to_1pct_mean": 22.3,
+      "auc_mean": 55470.02769818171,
+      "runtime_mean_sec": 0.002370830229483545
+    },
+    "qaoa_balance_move": {
+      "n": 10,
+      "final_mean": 268.0450333398716,
+      "final_std": 84.20027962576256,
+      "steps_to_1pct_mean": 6.7,
+      "auc_mean": 53818.56364581453,
+      "runtime_mean_sec": 80.75530312936753
+    }
+  }
+}
