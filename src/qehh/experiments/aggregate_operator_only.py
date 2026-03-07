@@ -68,7 +68,7 @@ def main():
     outpath.write_text(json.dumps(out, indent=2))
     print("Wrote:", outpath)
 
-    # Print a human table
+    # Print a simple summary to console
     ops = sorted(summary.keys())
     print("\nOperator summary (mean over seeds):")
     for op in ops:

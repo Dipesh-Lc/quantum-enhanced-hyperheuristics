@@ -1,4 +1,3 @@
-# src/qehh/core/instances.py
 from __future__ import annotations
 from typing import List, Literal
 import numpy as np

@@ -1,4 +1,3 @@
-# src/qehh/quantum/qaoa_operator.py
 from __future__ import annotations
 from dataclasses import dataclass
 import numpy as np
@@ -39,7 +38,7 @@ def op_qaoa_balance_move(
     Q = build_balance_qubo(sub)
 
     # Seed QAOA deterministically from RNG + seed_offset without consuming too much randomness.
-    # We'll draw one uint32 from rng and combine.
+    # Draw one uint32 from rng and combine.
     base = int(rng.integers(0, 2**31 - 1))
     seed = (base + int(seed_offset)) % (2**31 - 1)
 
@@ -60,7 +59,7 @@ def make_qaoa_operator(
     seed_offset: int = 0,
 ) -> Operator:
     """
-    Repo2-native Operator factory.
+    Operator factory.
     """
     def _fn(s: Schedule, r: np.random.Generator) -> Schedule:
         return op_qaoa_balance_move(

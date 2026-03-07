@@ -1,4 +1,3 @@
-# src/qehh/quantum/qaoa_runner.py
 from __future__ import annotations
 from dataclasses import dataclass
 from typing import Dict, Tuple
@@ -38,7 +37,7 @@ def qubo_to_ising(Q: np.ndarray) -> IsingModel:
     # Substitute x_i = (1 - z_i)/2.
     # For i==j: x_i x_i = x_i.
     #
-    # We'll derive h, J, offset by algebra:
+    # Derive h, J, offset by algebra:
     # x_i x_j = (1 - z_i - z_j + z_i z_j)/4 for i!=j
     # x_i      = (1 - z_i)/2 for i==j terms
 
@@ -149,7 +148,7 @@ def statevector_expectation(model: IsingModel, sv: Statevector) -> float:
 def best_bitstring_from_statevector(model: IsingModel, sv: Statevector) -> Tuple[np.ndarray, float]:
     """
     Return the bitstring with minimal Ising energy among basis states, weighted by nonzero amplitude
-    (i.e., among states with any probability > 0, but in practice we search all).
+    (i.e., among states with any probability > 0, but in practice, search all).
     """
     n = model.h.shape[0]
     probs = np.abs(np.array(sv.data)) ** 2
@@ -178,7 +177,7 @@ def solve_qubo_qaoa(
     Q: np.ndarray,
     *,
     reps: int = 1,
-    shots: int = 0,  # not used in statevector mode; kept for API compatibility
+    shots: int = 0,  
     seed: int = 0,
     n_param_samples: int = 16,
 ) -> Dict[str, object]:
@@ -225,7 +224,7 @@ def solve_qubo_qaoa(
 
     best_bits, best_ising_e = best_bitstring_from_statevector(model, best_sv)
 
-    # For reporting: compute QUBO energy directly on bits x
+    # compute QUBO energy directly on bits x
     x = best_bits.astype(int)
     qubo_e = float(x @ Q @ x)
 

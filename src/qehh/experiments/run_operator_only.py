@@ -1,4 +1,3 @@
-# src/qehh/experiments/run_operator_only.py
 from __future__ import annotations
 import argparse
 import json

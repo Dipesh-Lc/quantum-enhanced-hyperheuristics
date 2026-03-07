@@ -1,4 +1,3 @@
-# tests/test_decode_apply.py
 from __future__ import annotations
 import numpy as np
 

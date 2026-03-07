@@ -5,11 +5,11 @@ import numpy as np
 def maxcut_qubo_from_adj(W: np.ndarray) -> np.ndarray:
     """
     MaxCut on weighted undirected graph with adjacency/weight matrix W (n x n, symmetric, diag 0).
-    We convert to a QUBO for minimizing -CutValue.
+    Convert to a QUBO for minimizing -CutValue.
 
     Using x_i in {0,1} indicates partition membership.
     Cut weight = sum_{i<j} W_ij [x_i != x_j] = sum_{i<j} W_ij (x_i + x_j - 2 x_i x_j)
-    We want maximize cut => minimize negative cut.
+    Want maximize cut => minimize negative cut.
     Negative cut objective (drop constant): 
         E(x) = sum_{i<j} W_ij (2 x_i x_j - x_i - x_j)
     Encode as x^T Q x with symmetric Q.

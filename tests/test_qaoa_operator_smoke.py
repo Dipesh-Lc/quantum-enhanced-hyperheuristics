@@ -1,4 +1,3 @@
-# tests/test_qaoa_operator_smoke.py
 from __future__ import annotations
 import numpy as np
 

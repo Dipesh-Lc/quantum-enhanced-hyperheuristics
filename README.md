@@ -1,6 +1,6 @@
 # Quantum‑Enhanced Hyperheuristics (QEHh)
 
-**Hybrid Classical–Quantum Metaheuristic Framework for Scheduling
+**Hybrid Classical-Quantum Metaheuristic Framework for Scheduling
 Optimization**
 
 This repository implements a **quantum‑enhanced hyperheuristic
@@ -16,7 +16,7 @@ with **adaptive hyperheuristic controllers**.
 
 # Overview
 
-This project demonstrates a **hybrid classical–quantum metaheuristic
+This project demonstrates a **hybrid classical-quantum metaheuristic
 pipeline**:
 
 1.  Classical scheduling heuristics
@@ -25,7 +25,7 @@ pipeline**:
 4.  Hybrid operator integration
 5.  Hyperheuristic control (bandit)
 6.  Empirical evaluation across seeds
-7.  Integration adapter for external RL controller (Repo 1)
+7.  Integration adapter for external RL controller (Repo 1: https://github.com/Dipesh-Lc/rl-hyperheuristic )
 
 The repository is intentionally **independent of the RL system (Repo
 1)** but includes an adapter allowing seamless integration.
@@ -330,7 +330,7 @@ Parameter sweep:
 
 ---
 
-# Integration with RL Hyperheuristic (Repo 1)
+# Integration with RL Hyperheuristic (Repo 1) -- *Future Work*
 
 This repository provides an adapter:
 
@@ -387,7 +387,7 @@ selectively.
 
 The mathematical models and algorithms used in this project build upon established research in scheduling theory, hyper-heuristics, combinatorial optimization, and quantum optimization.
 
-## Scheduling Theory
+### Scheduling Theory
 
 1. Pinedo, M. L.  
    *Scheduling: Theory, Algorithms, and Systems (5th Edition).*  
@@ -402,9 +402,7 @@ The mathematical models and algorithms used in this project build upon establish
    *Scheduling Algorithms (5th Edition).*  
    Springer, 2007.
 
----
-
-## Hyper-Heuristics
+### Hyper-Heuristics
 
 4. Burke, E. K., Hyde, M., Kendall, G., Ochoa, G., Özcan, E., & Woodward, J.  
    *A Classification of Hyper-Heuristic Approaches.*  
@@ -414,9 +412,7 @@ The mathematical models and algorithms used in this project build upon establish
    *A Hyperheuristic Approach to Scheduling a Sales Summit.*  
    In Practice and Theory of Automated Timetabling, 2001.
 
----
-
-## QUBO and Ising Formulations
+### QUBO and Ising Formulations
 
 6. Lucas, A.  
    *Ising formulations of many NP problems.*  
@@ -427,9 +423,7 @@ The mathematical models and algorithms used in this project build upon establish
    *A Tutorial on Formulating and Using QUBO Models.*  
    arXiv:1811.11538
 
----
-
-## Quantum Approximate Optimization Algorithm (QAOA)
+### Quantum Approximate Optimization Algorithm (QAOA)
 
 8. Farhi, E., Goldstone, J., & Gutmann, S.  
    *A Quantum Approximate Optimization Algorithm.*  
@@ -439,9 +433,7 @@ The mathematical models and algorithms used in this project build upon establish
    *From the Quantum Approximate Optimization Algorithm to a Quantum Alternating Operator Ansatz.*  
    Algorithms, 2019.
 
----
-
-## Hybrid Quantum–Classical Optimization
+### Hybrid Quantum–Classical Optimization
 
 10. Preskill, J.  
     *Quantum Computing in the NISQ era and beyond.*  
@@ -452,9 +444,7 @@ The mathematical models and algorithms used in this project build upon establish
     *Variational Quantum Algorithms.*  
     Nature Reviews Physics, 2021.
 
----
-
-## Multi-Armed Bandit Algorithms
+### Multi-Armed Bandit Algorithms
 
 12. Auer, P., Cesa-Bianchi, N., & Fischer, P.  
     *Finite-time Analysis of the Multiarmed Bandit Problem.*  
@@ -463,6 +453,4 @@ The mathematical models and algorithms used in this project build upon establish
 13. Sutton, R. S., & Barto, A. G.  
     *Reinforcement Learning: An Introduction (2nd Edition).*  
     MIT Press, 2018.
-
----
 

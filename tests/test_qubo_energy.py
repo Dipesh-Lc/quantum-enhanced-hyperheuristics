@@ -1,4 +1,3 @@
-# tests/test_qubo_energy.py
 from __future__ import annotations
 import itertools
 import numpy as np

@@ -1,14 +1,13 @@
-# src/qehh/adapters/repo1_operator.py
+
+#Integration adapter for RL Hyper-Heuristic for Identical Parallel Machine Scheduling 
+# (Repo 1: https://github.com/Dipesh-Lc/rl-hyperheuristic )
+
 from __future__ import annotations
 from typing import TYPE_CHECKING
 import numpy as np
 
 from qehh.quantum.qaoa_operator import op_qaoa_balance_move
 from qehh.core.schedule import Schedule as Repo2Schedule
-
-# Important: Repo 2 remains independent.
-# We import rl_hh only inside the factory, so Repo 2 installs without Repo 1.
-
 
 def make_repo1_qaoa_operator(
     name: str = "qaoa_balance_move",

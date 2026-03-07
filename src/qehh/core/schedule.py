@@ -1,4 +1,3 @@
-# src/qehh/core/schedule.py
 from __future__ import annotations
 from dataclasses import dataclass
 from typing import List
@@ -12,7 +11,6 @@ def _clone_machines(machines: List[List[float]]) -> List[List[float]]:
 class Schedule:
     """
     Minimal, independent schedule representation for identical machines.
-    Matches Repo 1 structure: machines: List[List[float]].
     """
     machines: List[List[float]]
 
