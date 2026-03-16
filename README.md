@@ -255,11 +255,18 @@ Reproducible experiment scripts.
 
 # Installation
 
-## Conda
+## Option 1 — Conda (recommended)
+```
+conda env create -f environment.yml
+conda activate qehh
+pip install -e .
+```
 
-    conda env create -f environment.yml
-    conda activate qehh
-    pip install -e .
+## Option 2 — pip only
+```
+pip install -r requirements.txt
+pip install -e .
+```
 
 ---
 
